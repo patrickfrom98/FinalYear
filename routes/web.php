@@ -61,3 +61,7 @@ Route::get('/posts/{post}', function ($post) {
 // Controller route
 Route::get('/posts/{post}', 'App\Http\Controllers\PostsController@show');
 
+Auth::routes();
+
+Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
