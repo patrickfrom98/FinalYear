@@ -5,7 +5,7 @@
 </head>
 <body class="antialiased">
 <div>
-    <h1>Post: {{ $post }}</h1>
+    <h1>Post: {{ $post->content }}</h1>
 </div>
 </body>
 </html>
